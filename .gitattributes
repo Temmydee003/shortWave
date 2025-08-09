@@ -1,0 +1,9 @@
+# Set default behavior
+* text=auto
+
+# Force LF for specific files
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+.git* text eol=lf

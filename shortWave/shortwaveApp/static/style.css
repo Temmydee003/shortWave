@@ -1,0 +1,226 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+header h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#myform {
+    padding: 20px;
+}
+
+#url {
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    padding: 0px 15px;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#url:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+#submitBtn {
+    height: 50px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#submitBtn:hover {
+    background-color: #333;
+}
+
+#shortended_link {
+    padding: 0 20px 20px;
+    color: black;
+}
+
+/* Result container styles*/
+
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.result-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:#333;
+}
+
+.url-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.short-url {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-all;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0,3s;
+}
+
+.short-url:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0;
+}
+
+/* Button styles*/
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.copy-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.copy-btn:hover {
+    background-color: #333;
+}
+
+.copy-btn.copied {
+    background-color: #28a745;
+}
+
+.refresh-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.refresh-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Loading and alert Styles*/
+.spinner-border {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border 0.75s linear infinite;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px; /* Adjust height as needed */
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Responsive adjustment */
+@media (max-width: 450px) {
+    #container {
+        width: 95%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,73 @@
+# Django #
+##########
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+migrations/
+
+# Environment files #
+#####################
+.env
+.vennv/
+vennv/
+env/
+ENV/
+
+# IDE specific files #
+######################
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# Operating System files #
+#########################
+.DS_Store
+Thumbs.db
+
+# Python #
+##########
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Test files #
+##############
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Deployment #
+##############
+*.bak
+*.dump
+*.tgz
+*.gz
+
+# not all the files listed here are on the project, but this is a good start
