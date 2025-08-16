@@ -1,4 +1,4 @@
-# ShortWave - URL Shortener
+# SHORTMe. formally ShortWave - URL Shortener
 
 A simple Django-based URL shortening service.
 
