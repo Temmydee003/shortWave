@@ -11,7 +11,7 @@ A simple Django-based URL shortening service.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Temmydee003/shortWave.git
+   git clone https://github.com/temmydee-dev/shortWave.git
 
 2. Create and activate virtual environment:
     ```bash
